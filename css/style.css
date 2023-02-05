@@ -74,6 +74,10 @@ p, a {
     display: none;
 }
 
+.main-header__logo {
+    max-width: 13.8rem;
+}
+
 .main-header__logo img{
     height: 100%;
     object-fit: contain;
