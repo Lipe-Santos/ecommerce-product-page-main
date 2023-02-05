@@ -28,7 +28,7 @@
         <div class="menu-mobile">
           <button class="menuMobileBtn" aria-controls="menu-mobile--container" data-action="open"><img src="images/icon-menu.svg" alt="open menu"></button>
 
-          <div class="menu-mobile--container" style="display: none;">
+          <div id="menu-mobile--container" class="menu-mobile--container" style="display: none;">
             <nav class="menu-mobile--nav">
               <button class="menuMobileBtn" aria-controls="menu-mobile--container" data-action="close"><img src="images/icon-close.svg" alt="close menu"></button>
               <ul>
@@ -61,7 +61,7 @@
         <div class="main-header__profile--cart">
           <button class="cart-btn" aria-controls="cart"><img src="images/icon-cart.svg" alt="open my cart"></button>
 
-          <div class="cart" style="display: none;">
+          <div id="cart" class="cart" style="display: none;">
             <div class="cart__header">
               <h3>Cart</h3>
             </div>
@@ -80,7 +80,7 @@
 
       <div class="gallery">
 
-        <div class="carousel-mobile">
+        <div id="carousel-mobile" class="carousel-mobile">
           <img src="images/image-product-1.jpg" alt="" class="carousel-item show">
           <img src="images/image-product-2.jpg" alt="" class="carousel-item">
           <img src="images/image-product-3.jpg" alt="" class="carousel-item">
@@ -123,7 +123,7 @@
         <div class="add-cart">
           <div class="quantity-container">
             <button class="quantity-btn" data-action="remove" aria-controls="amount"><img src="images/icon-minus.svg" alt="one less"></button>
-            <input type="text" value="0" readonly class="amount">
+            <input type="text" value="0" readonly id="amount">
             <button class="quantity-btn" data-action="add" aria-controls="amount"><img src="images/icon-plus.svg" alt="add more one"></button>
           </div>
           <button class="add-cart__btn"><img src="images/icon-cart.svg" alt="">Add to cart</button>
