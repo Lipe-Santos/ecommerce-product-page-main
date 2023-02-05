@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="container">
+
+      <div class="main-header__navigation">
+        <div class="menu-mobile">
+          <button class="menuMobileBtn" aria-controls="menu-mobile--container" data-action="open"><img src="images/icon-menu.svg" alt="open menu"></button>
+
+          <div class="menu-mobile--container" style="display: none;">
+            <nav class="menu-mobile--nav">
+              <button class="menuMobileBtn" aria-controls="menu-mobile--container" data-action="close"><img src="images/icon-close.svg" alt="close menu"></button>
+              <ul>
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="main-header__logo"><a href="index.html"><img src="images/logo.svg" alt="logo"></a></div>
+
+        <div class="menu-desktop">
+          <nav class="menu-desktop--nav">
+            <ul>
+              <li><a href="#">Collections</a></li>
+              <li><a href="#">Men</a></li>
+              <li><a href="#">Women</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="main-header__profile">
+        <div class="main-header__profile--cart">
+          <button class="cart-btn" aria-controls="cart"><img src="images/icon-cart.svg" alt="open my cart"></button>
+
+          <div class="cart" style="display: none;">
+            <div class="cart__header">
+              <h3>Cart</h3>
+            </div>
+            <div class="cart__body"></div>
+          </div>
+        </div>
+
+        <div class="main-header__profile--picture"><img src="images/image-avatar.png" alt="avatar"></div>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+
+      <div class="gallery">
+
+        <div class="carousel-mobile">
+          <img src="images/image-product-1.jpg" alt="" class="carousel-item show">
+          <img src="images/image-product-2.jpg" alt="" class="carousel-item">
+          <img src="images/image-product-3.jpg" alt="" class="carousel-item">
+          <img src="images/image-product-4.jpg" alt="" class="carousel-item">
+          <div class="carousel-mobile__controls" aria-controls="carousel-mobile">
+            <button data-show="prev"><img src="images/icon-previous.svg" alt="previous image"></button>
+            <button data-show="next"><img src="images/icon-next.svg" alt="next"></button>
+          </div>
+        </div>
+
+        <div class="gallery-desktop">
+          <div class="gallery-desktop__selected">
+            <img src="images/image-product-1.jpg" alt="">
+          </div>
+
+          <div class="gallery-desktop__mini">
+            <div class="selected"><img src="images/image-product-1-thumbnail.jpg" alt=""></div>
+            <div><img src="images/image-product-2-thumbnail.jpg" alt=""></div>
+            <div><img src="images/image-product-1-thumbnail.jpg" alt=""></div>
+            <div><img src="images/image-product-4-thumbnail.jpg" alt=""></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="main-content__information">
+        
+        <h1>Sneaker Company</h1>
+        <h2>Fall Limited Edition Sneakers</h2>
+        <p>
+          These low-profile sneakers are your perfect casual wear companion. Featuring a
+          durable rubber outer sole, they’ll withstand everything the weather can offer.
+        </p>
+
+        <div class="price-container">
+          <p class="price-container__price"><b>$125.00</b> <span class="discount">50%</span</p>
+          <p class="price-container__old-price"><del>$250.00</del></p>
+        </div>
+        
+        <div class="add-cart">
+          <div class="quantity-container">
+            <button class="quantity-btn" data-action="remove" aria-controls="amount"><img src="images/icon-minus.svg" alt="one less"></button>
+            <input type="text" value="0" readonly class="amount">
+            <button class="quantity-btn" data-action="add" aria-controls="amount"><img src="images/icon-plus.svg" alt="add more one"></button>
+          </div>
+          <button class="add-cart__btn"><img src="images/icon-cart.svg">Add to cart</button>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Daniel Santos</a>.
+  </div>
+
+  <script src="js/main.js" type="module"></script>
+</body>
+</html>
